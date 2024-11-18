@@ -1,0 +1,63 @@
+/* Import Tailwind base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Body styling with consistent text scaling */
+body {
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	-webkit-text-size-adjust: 100%; /* For legacy support */
+	text-size-adjust: 100%;        /* For modern browsers */
+}
+
+/* Dark mode styled scrollbar */
+::-webkit-scrollbar {
+	width: 8px; /* Adjust width for better user experience */
+}
+
+::-webkit-scrollbar-track {
+	background: #555; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+	background: #121212; /* Thumb color for dark mode */
+	border-radius: 5px; /* Rounded corners for better aesthetics */
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #242424; /* Slightly lighter shade on hover for better contrast */
+}
+
+/* Horizontal shake animation */
+.shake {
+	animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.2s both;
+	transform: translate3d(0, 0, 0); /* Ensures no movement on Z-axis */
+	backface-visibility: hidden; /* Improves rendering performance */
+	perspective: 1000px; /* Adds depth to the animation */
+}
+
+@keyframes shake {
+	10%,
+	90% {
+		transform: translate3d(-1px, 0, 0); /* Slight left movement */
+	}
+
+	20%,
+	80% {
+		transform: translate3d(2px, 0, 0); /* Slight right movement */
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-4px, 0, 0); /* More pronounced left movement */
+	}
+
+	40%,
+	60% {
+		transform: translate3d(4px, 0, 0); /* More pronounced right movement */
+	}
+}
