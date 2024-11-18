@@ -2,23 +2,24 @@
 Demo App
 
 
-![Screenshot (211)](https://github.com/user-attachments/assets/67ee7dd0-4d91-4619-bae8-e9e19a597669)
+
+
 Some Features:
 
-🌟 Tech stack: MERN + Socket.io + TailwindCSS + Daisy UI
-🎃 Authentication && Authorization with JWT
-👾 Real-time messaging with Socket.io
-🚀 Online user status (Socket.io and React Context)
-👌 Global state management with Zustand
-🐞 Error handling both on the server and on the client
-⭐ At the end Deployment like a pro for FREE!
-⏳ And much more!
-Setup .env file
-PORT=...
-MONGO_DB_URI=...
-JWT_SECRET=...
-NODE_ENV=...
-Build the app
-npm run build
-Start the app
-npm start
+🌟 Tech stack: MERN + Socket.io + TailwindCSS + Daisy UI<br/>
+🎃 Authentication && Authorization with JWT<br/>
+👾 Real-time messaging with Socket.io<br/>
+🚀 Online user status (Socket.io and React Context)<br/>
+👌 Global state management with Zustand<br/>
+🐞 Error handling both on the server and on the client<br/>
+⭐ At the end Deployment like a pro for FREE!<br/>
+⏳ And much more!<br/>
+Setup .env file<br/>
+PORT=...<br/>
+MONGO_DB_URI=...<br/>
+JWT_SECRET=...<br/>
+NODE_ENV=...<br/>
+Build the app<br/>
+npm run build<br/>
+Start the app<br/>
+npm start<br/>
