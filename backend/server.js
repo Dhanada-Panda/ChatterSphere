@@ -20,11 +20,11 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json()); // to parse the incoming requests with JSON payloads (from req.body)
 app.use(cookieParser());
 
-app.use(cors({
-    origin: 'https://chatter-sphere-frontend.vercel.app', // Replace with your frontend's deployed URL
-    methods: 'GET,POST,PUT,DELETE', // Allowed methods
-    credentials: true, // Allow credentials (if needed)
-}));
+//app.use(cors({
+  //  origin: 'https://chatter-sphere-frontend.vercel.app', // Replace with your frontend's deployed URL
+    //methods: 'GET,POST,PUT,DELETE', // Allowed methods
+    //credentials: true, // Allow credentials (if needed)
+//}));
 
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
